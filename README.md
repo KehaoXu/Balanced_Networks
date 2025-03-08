@@ -32,10 +32,8 @@ The repository contains the following main files:
 
 - **LIF Neuron Model**:  
   The membrane potential $V_i(t)$ of a neuron follows the differential equation:
-
-  $$
-  \frac{dV_i^\alpha(t)}{dt} = -\frac{V_i^\alpha(t)}{\tau} + \sum_{\beta \in \{E, I, X\}} \frac{J_{\alpha\beta}}{\sqrt{K}} \sum_{j \in C_i^{\alpha\beta}} S_j^\beta(t)
-  $$
+  
+  $$\frac{dV_i^\alpha(t)}{dt} = -\frac{V_i^\alpha(t)}{\tau} + \sum_{\beta \in \{E, I, X\}} \frac{J_{\alpha\beta}}{\sqrt{K}} \sum_{j \in C_i^{\alpha\beta}} S_j^\beta(t)$$
 
   When $V_i(t)$ exceeds the threshold $V_{th}$, the neuron emits a spike and its potential is reset.
 
